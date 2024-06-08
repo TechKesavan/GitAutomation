@@ -11,7 +11,7 @@ public class NavigationMethods {
 		driver.manage().window().maximize();
 		Thread.sleep(4000);
 		driver.get("https://www.google.com/");
-		Thread.sleep(2000);
+		Thread.sleep(4000);
 		driver.navigate().to("https://www.facebook.com/");
 		Thread.sleep(2000);
 		driver.navigate().back();
