@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-06-09T21:05:53 IST" name="Default suite" finished-at="2024-06-09T21:06:10 IST" duration-ms="16950">
+    <groups>
+    </groups>
+    <test started-at="2024-06-09T21:05:53 IST" name="Default test" finished-at="2024-06-09T21:06:10 IST" duration-ms="16950">
+      <class name="testNG.Alphabetical_Order">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:testNG.Alphabetical_Order@272113c4]" started-at="2024-06-09T21:05:53 IST" name="beforeTest" finished-at="2024-06-09T21:05:55 IST" duration-ms="2486" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="facebook()[pri:0, instance:testNG.Alphabetical_Order@272113c4]" started-at="2024-06-09T21:05:55 IST" name="facebook" finished-at="2024-06-09T21:05:56 IST" duration-ms="1217" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- facebook -->
+        <test-method signature="gmail()[pri:0, instance:testNG.Alphabetical_Order@272113c4]" started-at="2024-06-09T21:05:56 IST" name="gmail" finished-at="2024-06-09T21:05:59 IST" duration-ms="2808" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- gmail -->
+        <test-method signature="google()[pri:0, instance:testNG.Alphabetical_Order@272113c4]" started-at="2024-06-09T21:05:59 IST" name="google" finished-at="2024-06-09T21:06:02 IST" duration-ms="2421" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- google -->
+        <test-method signature="redmine()[pri:0, instance:testNG.Alphabetical_Order@272113c4]" started-at="2024-06-09T21:06:02 IST" name="redmine" finished-at="2024-06-09T21:06:07 IST" duration-ms="5294" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- redmine -->
+        <test-method signature="selenium()[pri:0, instance:testNG.Alphabetical_Order@272113c4]" started-at="2024-06-09T21:06:07 IST" name="selenium" finished-at="2024-06-09T21:06:07 IST" duration-ms="315" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selenium -->
+        <test-method signature="swiggy()[pri:0, instance:testNG.Alphabetical_Order@272113c4]" started-at="2024-06-09T21:06:07 IST" name="swiggy" finished-at="2024-06-09T21:06:08 IST" duration-ms="188" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- swiggy -->
+        <test-method signature="x()[pri:0, instance:testNG.Alphabetical_Order@272113c4]" started-at="2024-06-09T21:06:08 IST" name="x" finished-at="2024-06-09T21:06:09 IST" duration-ms="1758" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- x -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:testNG.Alphabetical_Order@272113c4]" started-at="2024-06-09T21:06:09 IST" name="afterTest" finished-at="2024-06-09T21:06:10 IST" duration-ms="317" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- testNG.Alphabetical_Order -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
