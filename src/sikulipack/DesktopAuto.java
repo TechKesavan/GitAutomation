@@ -1,10 +1,8 @@
 package sikulipack;
 
 import org.testng.annotations.Test;
-import org.sikuli.script.FindFailed;
 import org.sikuli.script.Screen;
 import org.sikuli.script.SikuliException;
-import org.testng.annotations.BeforeTest;
 
 public class DesktopAuto {
 	Screen sc=new Screen();
