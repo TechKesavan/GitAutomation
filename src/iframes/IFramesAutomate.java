@@ -35,6 +35,9 @@ public class IFramesAutomate {
 	  Thread.sleep(2000);
 
 	  driver.findElement(By.xpath("//*[@id=\"subtopnav\"]/a[6]")).click();
+	  driver.switchTo().window(tab.get(0));
+	  
+	  driver.close();
 	  
   }
   

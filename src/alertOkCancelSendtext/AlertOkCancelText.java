@@ -14,27 +14,27 @@ import org.testng.annotations.BeforeTest;
 public class AlertOkCancelText {
 	WebDriver driver;
 
-	@Disabled
+	
 	@Test
 	public void alerOk() {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-		driver.get("https://seleniumlearn.com/confirmation-dialog-box/");
+		driver.get("https://www.seleniumlearn.com/confirmation-dialog-box");
 		driver.findElement(By.xpath("//*[@id=\"node-102\"]/div/div[1]/div/div/button")).click();
 		Alert alr = driver.switchTo().alert();
 		alr.accept();
 	}
 
-	@Disabled
+	
 	@Test
 	public void alertCancel() {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-		driver.get("https://seleniumlearn.com/confirmation-dialog-box/");
+		driver.get("https://www.seleniumlearn.com/confirmation-dialog-box");
 		driver.findElement(By.xpath("//*[@id=\"node-102\"]/div/div[1]/div/div/button")).click();
 		Alert alr = driver.switchTo().alert();
 		alr.dismiss();
 	}
-	
-	/* @Test
+	/*
+	 @Test
 	  public void alerEnterTextOk() {
 		  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		  driver.get("https://seleniumlearn.com/prompt-dialog-box/");
@@ -47,11 +47,11 @@ public class AlertOkCancelText {
 		  alr.sendKeys("King");
 		  alr.accept();
 	  }
-	 */
+	*/
 	
 	 @Test
-	  public void alerEnterTextOk() throws Exception {		  
-		  driver.get("https://seleniumlearn.com/prompt-dialog-box/");
+	  public void alertEnterTextOk() throws Exception {		  
+		  driver.get("https://www.seleniumlearn.com/prompt-dialog-box");
 		  Thread.sleep(5000);
 		  driver.findElement(By.xpath("//*[@id=\"node-103\"]/div/div[1]/div/div/button")).click();
 		  Alert alr=driver.switchTo().alert();
