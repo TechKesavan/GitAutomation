@@ -17,12 +17,12 @@ public class VerifyImageTextCheckboxField {
 	  
 	  driver.get("https:/www.redmine.org/");
 	  
-	  boolean pro=driver.findElement(By.xpath("//*[normalization-space(text())='projects']")).isDisplayed();
+	  boolean pro=driver.findElement(By.xpath("//*[normalize-space(text())='Projects']")).isDisplayed();
 	  
 	  if(pro==true)
 	  {
 		  System.out.println("Project menu is displyaed in the top menu bar");
-		  driver.findElement(By.xpath("//*[normalization-space(text())='projects']")).click();
+		  driver.findElement(By.xpath("//*[normalize-space(text())='Projects']")).click();
 	  }
 	  else
 	  {
@@ -35,14 +35,14 @@ public class VerifyImageTextCheckboxField {
 	  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 	  
 	  driver.get("https:/www.redmine.org/");
-	  driver.findElement(By.xpath("//*[normalization-space(text())='register']")).click();
+	  driver.findElement(By.xpath("//*[normalize-space(text())='Sign in']")).click();
 	  
-	  boolean user=driver.findElement(By.xpath("//*[normalization-space(text())='username']")).isEnabled();
+	  boolean user=driver.findElement(By.xpath("//*[@name='username']")).isEnabled();
 	  
 	  if(user==true)
 	  {
-		  System.out.println("user text field  is enabled to enter");
-		  driver.findElement(By.xpath("//*[normalization-space(text())='username']")).sendKeys("kesavan");
+		  System.out.println("user text field  is enabled to enter username");
+		  driver.findElement(By.xpath("//*[@name='username']")).sendKeys("kesavan");
 	  }
 	  else
 	  {
@@ -55,11 +55,11 @@ public class VerifyImageTextCheckboxField {
 	  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 	  
 	  driver.get("https:/www.redmine.org/");
-	  driver.findElement(By.xpath("//*[normalization-space(text())='register']")).click();
+	  driver.findElement(By.xpath("//*[normalize-space(text())='Sign in']")).click();
 	  
 	//  driver.findElement(By.xpath("//*[normalization-space(text())='stay logged in']")).click();
 
-	  boolean check=driver.findElement(By.xpath("//*[normalization-space(text())='stay logged in']")).isSelected();
+	  boolean check=driver.findElement(By.xpath("//*[normalize-space(text())='Stay logged in']")).isSelected();
 	  
 	  if(check==true)
 	  {
@@ -67,7 +67,7 @@ public class VerifyImageTextCheckboxField {
 	  }
 	  else
 	  {
-		  System.out.println("stay loged is  check box is not selected");
+		  System.out.println("stay loged in  check box is not selected");
 	  }
   }
   
