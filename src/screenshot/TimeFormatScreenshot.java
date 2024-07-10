@@ -18,7 +18,7 @@ import org.testng.annotations.BeforeTest;
 public class TimeFormatScreenshot {
 WebDriver driver;
 	
-	public void Screenshot() throws IOException {
+	public void timeScreenshot() throws IOException {
 		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy_MMM_dd HH_mm_ss");
 		Date date = new Date();
 		String time = dateFormat.format(date);
@@ -29,31 +29,33 @@ WebDriver driver;
 
 	@Test
 	public void googlesearch() throws Exception {
-		driver.get("https://google.com");
+		driver.get("https://redmine.org");
 		Thread.sleep(2000);
-		Screenshot();
+		timeScreenshot();
 		
-		driver.findElement(By.name("q")).sendKeys("Bengaluru");
+		driver.findElement(By.xpath("//*[@id=\"account\"]/ul/li[1]/a")).click();
 		Thread.sleep(1000);
-		Screenshot();
+		timeScreenshot();
 		
-		driver.findElement(By.name("q")).sendKeys(Keys.ENTER);
+		driver.findElement(By.xpath("//*[@id=\"username\"]")).sendKeys("Ashok");
+		driver.findElement(By.xpath("//*[@id=\"password\"]")).sendKeys("fnjf887dd");
 		Thread.sleep(1000);
-		Screenshot();
+		timeScreenshot();
 		
-		driver.findElement(By.id("hdtb-tls")).click();
+		
+		driver.findElement(By.xpath("//*[@id=\"login-submit\"]")).click();
 		Thread.sleep(1000);
-		Screenshot();
+		timeScreenshot();
 	}
 
 	@Test(enabled=false)
 	public void facebook() throws Exception {
 		driver.get("http://seleniumlearn.com/selenium-commands");
 		Thread.sleep(6000);
-		Screenshot();
+		timeScreenshot();
 		String selectalltext = Keys.chord(Keys.CONTROL, "a"); // select all text in techlearn.in home page
 		driver.findElement(By.xpath("//*[@id=\"edit-submit\"]")).sendKeys(selectalltext);		           
-	//	Screenshot();
+	//	timeScreenshot();
 	}
 
 	@BeforeTest

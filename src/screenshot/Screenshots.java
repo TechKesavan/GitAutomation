@@ -1,13 +1,15 @@
 package screenshot;
 
 import org.testng.annotations.Test;
+
+import java.io.File;
+
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.reflections8.vfs.Vfs.File;
 import org.testng.annotations.BeforeTest;
 
 public class Screenshots {
@@ -18,9 +20,9 @@ public class Screenshots {
 		driver.get("https://www.google.com/");
 		Thread.sleep(3000);
 
-		WebElement gmail = driver.findElement(By.xpath("//*[@id=\"gb\"]/div/div[1]/div/div[1]/a"));
+		WebElement img = driver.findElement(By.xpath("//*[@id=\"gb\"]/div[2]/div[3]/div[1]/div/div[2]/a"));
 
-		File f = gmail.org.openqa.selenium.getScreenshotAs(OutputType.FILE);
+		File f = img.getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(f, new File("C:\\Lin\\screenshots\\gmail.png"));
 
 	}
