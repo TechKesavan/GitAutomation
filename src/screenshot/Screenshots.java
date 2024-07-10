@@ -12,18 +12,23 @@ import org.testng.annotations.BeforeTest;
 
 public class Screenshots {
 	WebDriver driver;
-  @Test
-  public void screenshot() throws Exception {
-	  driver.get("https://www.google.com/");
-	  Thread.sleep(2000);
-	  WebElement logo=driver.findElement(By.xpath("/html/body/div[1]/div[2]/div/img"));
-	  File f=logo.getScreenshotAs(OutputType.FILE);
-	  FileUtils.copyFile(f,new File("C:\\Lin\\screenshots\\glogo.pn"));
-  }
-  @BeforeTest
-  public void beforeTest() {
-	  driver = new ChromeDriver();
-	  driver.manage().window().maximize();
-  }
+
+	@Test
+	public void TakeScreenShot() throws Exception {
+		driver.get("https://www.google.com/");
+		Thread.sleep(3000);
+
+		WebElement gmail = driver.findElement(By.xpath("//*[@id=\"gb\"]/div/div[1]/div/div[1]/a"));
+
+		File f = gmail.org.openqa.selenium.getScreenshotAs(OutputType.FILE);
+		FileUtils.copyFile(f, new File("C:\\Lin\\screenshots\\gmail.png"));
+
+	}
+
+	@BeforeTest
+	public void beforeTest() {
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+	}
 
 }

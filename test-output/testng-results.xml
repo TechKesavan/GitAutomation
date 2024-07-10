@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-18T16:38:14 IST" name="Default suite" finished-at="2024-06-18T16:39:37 IST" duration-ms="83669">
+  <suite started-at="2024-07-10T09:56:42 IST" name="Default suite" finished-at="2024-07-10T09:56:57 IST" duration-ms="15222">
     <groups>
     </groups>
-    <test started-at="2024-06-18T16:38:14 IST" name="Default test" finished-at="2024-06-18T16:39:37 IST" duration-ms="83669">
-      <class name="iframes.NewTab">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:iframes.NewTab@73e9cf30]" started-at="2024-06-18T16:38:14 IST" name="beforeTest" finished-at="2024-06-18T16:38:51 IST" duration-ms="36899" status="PASS">
+    <test started-at="2024-07-10T09:56:42 IST" name="Default test" finished-at="2024-07-10T09:56:57 IST" duration-ms="15222">
+      <class name="screenshot.FullpageScreenshot">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:screenshot.FullpageScreenshot@76494737]" started-at="2024-07-10T09:56:42 IST" name="beforeTest" finished-at="2024-07-10T09:56:45 IST" duration-ms="3374" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="f()[pri:0, instance:iframes.NewTab@73e9cf30]" started-at="2024-06-18T16:38:51 IST" name="f" finished-at="2024-06-18T16:39:37 IST" duration-ms="46679" status="PASS">
+        <test-method signature="CompletePageScreenshot()[pri:0, instance:screenshot.FullpageScreenshot@76494737]" started-at="2024-07-10T09:56:45 IST" name="CompletePageScreenshot" finished-at="2024-07-10T09:56:57 IST" duration-ms="11749" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-      </class> <!-- iframes.NewTab -->
+        </test-method> <!-- CompletePageScreenshot -->
+      </class> <!-- screenshot.FullpageScreenshot -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

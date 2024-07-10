@@ -2,8 +2,11 @@ package screenshot;
 
 import org.testng.annotations.Test;
 
+import ru.yandex.qatools.ashot.AShot;
 import ru.yandex.qatools.ashot.Screenshot;
 import ru.yandex.qatools.ashot.shooting.ShootingStrategies;
+
+import java.io.IOException;
 
 import javax.imageio.ImageIO;
 
@@ -13,19 +16,19 @@ import org.testng.annotations.BeforeTest;
 
 public class FullpageScreenshot {
 	WebDriver driver;
-	
-  @Test
-  public void selenium() throws Exception {
-	  driver.get("https:\\www.seleniumlearn.com");
-	  Thread.sleep(2000);
-	  
-	  Screenshot s=new Ashot().shootingStrategy(ShootingStrategies.viewportPasting(1000)).takeScreenshot(driver);
-	  ImageIO.write(s.getImage()."PNG",new File("C:\\Lin\\screenshots\\fullScreen.PNG"))
-  }
-  @BeforeTest
-  public void beforeTest() {
-	  driver=new ChromeDriver();
-	  driver.manage().window().maximize();
-  }
+
+	@Test
+	public void CompletePageScreenshot() throws IOException, Exception {
+		driver.get("https://www.selenium.dev/");
+		Thread.sleep(3000);
+		Screenshot s = new AShot().shootingStrategy(ShootingStrategies.viewportPasting(1000)).takeScreenshot(driver);
+		ImageIO.write(s.getImage(), "PNG", new java.io.File("C:\\Lin\\screenshots\\FullPageScreenshot.png"));
+	}
+
+	@BeforeTest
+	public void beforeTest() {
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+	}
 
 }
