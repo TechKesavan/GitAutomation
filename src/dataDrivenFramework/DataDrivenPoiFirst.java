@@ -40,7 +40,7 @@ public class DataDrivenPoiFirst {
 	public void ReadData() throws IOException, InterruptedException
 	{
 		// Import excel sheet.
-		File src=new File("F:\\Lib\\Feb\\TestData\\LoginDetails.xls");
+		File src=new File("C:\\Lin\\TestData\\LoginDetails.xls");
 
 		// Load the file.
 		FileInputStream finput = new FileInputStream(src);

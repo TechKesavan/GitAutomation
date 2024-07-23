@@ -21,7 +21,7 @@ public class DataDrivenValidation {
 		driver.get("http://hyderabadreport.com/user");			
 		Thread.sleep(2000);
 		
-		FileInputStream fi=new FileInputStream("F:\\Lib\\July\\TestData\\LoginDataValidation.xls");
+		FileInputStream fi=new FileInputStream("C:\\Lin\\TestData\\LoginDataValidation.xls");
 		Workbook w = Workbook.getWorkbook(fi);
 		Sheet s=w.getSheet(0);
 		

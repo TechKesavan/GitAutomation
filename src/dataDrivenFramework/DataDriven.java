@@ -22,7 +22,7 @@ public class DataDriven {
 		driver.get("http://hyderabadreport.com/user");
 		Thread.sleep(3000);
 		
-		FileInputStream fi = new FileInputStream("F:\\Lib\\July\\TestData\\UserData.xls"); // Here your excelsheet path.
+		FileInputStream fi = new FileInputStream("C:\\Lin\\TestData\\UserData.xls"); // Here your excelsheet path.
 		Workbook w = Workbook.getWorkbook(fi);
 		Sheet s = w.getSheet("Sheet1");
 

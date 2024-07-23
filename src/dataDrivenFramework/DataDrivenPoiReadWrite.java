@@ -38,7 +38,7 @@ public class DataDrivenPoiReadWrite {
 	 public void ReadData() throws IOException
 	 {
 	     // Import excel sheet.
-	     File src=new File("E:\\Selenium\\TestData\\PoiThree.xls");
+	     File src=new File("C:\\Lin\\TestData\\PoiThree.xls");
 	      
 	     // Load the file.
 	     FileInputStream finput = new FileInputStream(src);
