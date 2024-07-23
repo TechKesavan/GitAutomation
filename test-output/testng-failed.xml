@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="screenshot.TimeFormatScreenshot">
+      <class name="testNG.CrossBrowserTesting">
         <methods>
-          <include name="beforeTest"/>
-          <include name="googlesearch"/>
+          <include name="closeBrowser"/>
+          <include name="openBrowser"/>
+          <include name="Run"/>
         </methods>
-      </class> <!-- screenshot.TimeFormatScreenshot -->
+      </class> <!-- testNG.CrossBrowserTesting -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
