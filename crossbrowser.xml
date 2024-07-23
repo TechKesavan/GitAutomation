@@ -17,7 +17,7 @@
   </test> <!-- newtest -->
   
   
-  <test name="Internetexplorertest">
+  <test name="MicrosoftEdgetest">
   <parameter name="browser" value="MEdge"></parameter>
     <classes>
       <class name="testNG.CrossBrowserTesting"/>

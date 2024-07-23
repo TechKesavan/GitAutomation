@@ -92,5 +92,13 @@
 	<classpathentry kind="lib" path="C:/Lin/sikulixapi-2.0.5-win.jar"/>
 	<classpathentry kind="lib" path="C:/Lin/log4j-1.2.17.jar/log4j-1.2.17.jar"/>
 	<classpathentry kind="lib" path="C:/Lin/ashot-1.5.2.jar/ashot-1.5.2.jar"/>
+	<classpathentry kind="lib" path="C:/Lin/jxl.jar"/>
+	<classpathentry kind="lib" path="C:/Lin/poi-3.10-FINAL-20140208.jar"/>
+	<classpathentry kind="lib" path="C:/Lin/poi-examples-3.10-FINAL-20140208.jar"/>
+	<classpathentry kind="lib" path="C:/Lin/poi-excelant-3.10-FINAL-20140208.jar"/>
+	<classpathentry kind="lib" path="C:/Lin/poi-ooxml-3.10-FINAL-20140208.jar"/>
+	<classpathentry kind="lib" path="C:/Lin/poi-ooxml-schemas-3.10-FINAL-20140208.jar"/>
+	<classpathentry kind="lib" path="C:/Lin/poi-scratchpad-3.10-FINAL-20140208.jar"/>
+	<classpathentry kind="lib" path="C:/Lin/sqljdbc4.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
