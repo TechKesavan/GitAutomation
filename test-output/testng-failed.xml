@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testNG.CrossBrowserTesting">
+      <class name="sikulipack.DesktopAuto">
         <methods>
-          <include name="closeBrowser"/>
-          <include name="openBrowser"/>
-          <include name="Run"/>
+          <include name="windowWifiClick"/>
         </methods>
-      </class> <!-- testNG.CrossBrowserTesting -->
+      </class> <!-- sikulipack.DesktopAuto -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

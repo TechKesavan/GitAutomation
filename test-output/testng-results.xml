@@ -1,31 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-07-23T09:51:35 IST" name="Default suite" finished-at="2024-07-23T09:51:35 IST" duration-ms="103">
+  <suite started-at="2024-07-30T10:25:23 IST" name="Default suite" finished-at="2024-07-30T10:25:27 IST" duration-ms="3292">
     <groups>
     </groups>
-    <test started-at="2024-07-23T09:51:35 IST" name="Default test" finished-at="2024-07-23T09:51:35 IST" duration-ms="103">
-      <class name="testNG.CrossBrowserTesting">
-        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:testNG.CrossBrowserTesting@6d60fe40]" started-at="2024-07-23T09:51:35 IST" name="openBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1721708495551" status="FAIL">
-          <exception class="org.testng.TestNGException">
+    <test started-at="2024-07-30T10:25:23 IST" name="Default test" finished-at="2024-07-30T10:25:27 IST" duration-ms="3292">
+      <class name="sikulipack.DesktopAuto">
+        <test-method signature="windowWifiClick()[pri:0, instance:sikulipack.DesktopAuto@19b89d4]" started-at="2024-07-30T10:25:24 IST" name="windowWifiClick" finished-at="2024-07-30T10:25:27 IST" duration-ms="3200" status="FAIL">
+          <exception class="org.sikuli.script.FindFailed">
             <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeTest on method openBrowser but has not been marked @Optional or defined
-in C:\Users\HP\AppData\Local\Temp\testng-eclipse-1890909039\testng-customsuite.xml]]>
+              <![CDATA[C:\Lin\screenshots\win.png: (38x38) in R[0,0 1536x864]@S(0)]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeTest on method openBrowser but has not been marked @Optional or defined
-in C:\Users\HP\AppData\Local\Temp\testng-eclipse-1890909039\testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:264)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
-at org.testng.TestRunner.beforeRun(TestRunner.java:644)
-at org.testng.TestRunner.run(TestRunner.java:610)
+              <![CDATA[FindFailed: C:\Lin\screenshots\win.png: (38x38) in R[0,0 1536x864]@S(0)
+  Line 2226, in file Region.java
+
+at org.sikuli.script.Region.wait(Region.java:2226)
+at org.sikuli.script.Region.wait(Region.java:2244)
+at org.sikuli.script.Region.getLocationFromTarget(Region.java:3298)
+at org.sikuli.script.Region.mouseMove(Region.java:4209)
+at sikulipack.DesktopAuto.windowWifiClick(DesktopAuto.java:18)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
 at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
 at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
@@ -41,53 +49,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+          </exception> <!-- org.sikuli.script.FindFailed -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openBrowser -->
-        <test-method signature="Run()[pri:0, instance:testNG.CrossBrowserTesting@6d60fe40]" started-at="2024-07-23T09:51:35 IST" name="Run" finished-at="2024-07-23T09:51:35 IST" duration-ms="0" status="SKIP">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeTest on method openBrowser but has not been marked @Optional or defined
-in C:\Users\HP\AppData\Local\Temp\testng-eclipse-1890909039\testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeTest on method openBrowser but has not been marked @Optional or defined
-in C:\Users\HP\AppData\Local\Temp\testng-eclipse-1890909039\testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:264)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
-at org.testng.TestRunner.beforeRun(TestRunner.java:644)
-at org.testng.TestRunner.run(TestRunner.java:610)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Run -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testNG.CrossBrowserTesting@6d60fe40]" started-at="2024-07-23T09:51:35 IST" name="closeBrowser" finished-at="2024-07-23T09:51:35 IST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- testNG.CrossBrowserTesting -->
+        </test-method> <!-- windowWifiClick -->
+      </class> <!-- sikulipack.DesktopAuto -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
