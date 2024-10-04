@@ -42,10 +42,17 @@ public class VerifyTabTitleURLText {
 	  
 	  String expectedText = "gmail";
 	  String actualText = driver.findElement(By.xpath("//*[normalize-space(text())='gmail']")).getText();
-	  Assert.assertEquals(actualText, expectedText);
-	  
-	  
+	  Assert.assertEquals(actualText, expectedText);  
   }
+  
+  @Test
+  public void pageSource() {
+	  driver.get("https://www.google.com");
+	  
+	  String pagesource = driver.getPageSource();
+	  System.out.println("Page Source: "+pagesource);
+  }
+  
   
   @BeforeTest
   public void beforeTest() {
