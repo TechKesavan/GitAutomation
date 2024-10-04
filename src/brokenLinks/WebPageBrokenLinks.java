@@ -32,8 +32,8 @@ public class WebPageBrokenLinks {
     {
 try 
         {
-			URL url = new URL(linkUrl);
-            HttpURLConnection httpURLConnect=(HttpURLConnection)url.openConnection();
+			URL url = new URL(linkUrl);   //URl is class
+            HttpURLConnection httpURLConnect=(HttpURLConnection)url.openConnection(); //HttpURLConnection is sub class for URL
             httpURLConnect.setConnectTimeout(5000);
             httpURLConnect.connect();
             if(httpURLConnect.getResponseCode()>=400)
@@ -42,7 +42,7 @@ try
             }
             if(httpURLConnect.getResponseCode()==HttpURLConnection.HTTP_NOT_FOUND)  
             {
-System.out.println(linkUrl+" - "+httpURLConnect.getResponseMessage() + " - "+ HttpURLConnection.HTTP_NOT_FOUND);
+            	System.out.println(linkUrl+" - "+httpURLConnect.getResponseMessage() + " - "+ HttpURLConnection.HTTP_NOT_FOUND);
             }
         } catch (Exception e) {
         }
